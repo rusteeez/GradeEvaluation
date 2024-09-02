@@ -6,7 +6,7 @@ public class Grade {
         while(i == 1){
             Scanner scnr = new Scanner(System.in);
             String grade = new String();
-            //int i = 1;
+    
 
             //ask user for the type of assignment
             System.out.println("What is the type of the assessment? Type 1 for midterm, type 2 for project, and type 3 for final.");
