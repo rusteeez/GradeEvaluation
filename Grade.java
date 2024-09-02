@@ -13,8 +13,9 @@ public class Grade {
         System.out.println("Enter the score:");
         int score = scnr.nextInt();
 
+        
         if(type == 1) {// midterm
-            findGrade(score, 90,90,65,65);
+            grade = findGrade(score, 90,90,65,65);
         }
         else if(type == 2) {//project
             grade = findGrade(score, 85, 85, 50, 50);
@@ -25,7 +26,7 @@ public class Grade {
         else{
             System.out.println("Invalid Input.");
         }
-
+        
         //Print out the grade for the submitted assessment
         System.out.printf("Grade for Assessment is %s", grade);
 
@@ -50,6 +51,7 @@ public class Grade {
         else{
             grade = "Invalid Score";
         }
+        
         return grade;
     }
 }
